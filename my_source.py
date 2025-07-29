@@ -1,7 +1,16 @@
 # Contains code under test for pytest notebook
 
-def add_func(a, b):
-    return a + b
+
+def add_func(a, var_two):
+    """
+    Add two variables.
+
+    Args
+        a: first variable
+        var_two: second variable
+
+    """
+    return a + var_two
 
 
 def prime(a, b):
