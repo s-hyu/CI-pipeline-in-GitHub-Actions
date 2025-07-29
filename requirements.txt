@@ -20,3 +20,8 @@ yapf
 pylint
 flake8
 tensorflow
+pytest
+pytest-cov
+flake8
+pylint
+pydocstyle
