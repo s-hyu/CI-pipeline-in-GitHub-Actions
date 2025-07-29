@@ -36,4 +36,13 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+    - name: Lint with pylint
+      run: |
+        pylint --exit-zero my_source.py
+    - name: Code coverage
+      run: |
+        pytest --cov-report term-missing --cov
+    - name: Pydocstyle
+      run: |
+        pydocstyle
         pytest
